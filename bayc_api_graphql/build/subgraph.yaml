@@ -1,6 +1,6 @@
 specVersion: 0.0.5
 schema:
-  file: ./schema.graphql
+  file: schema.graphql
 dataSources:
   - kind: ethereum
     name: BoredApeYachtClub
@@ -18,8 +18,8 @@ dataSources:
         - User
       abis:
         - name: BoredApeYachtClub
-          file: ./abis/BoredApeYachtClub.json
+          file: BoredApeYachtClub/abis/BoredApeYachtClub.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,indexed uint256)
           handler: handleTransfer
-      file: ./src/mapping.ts
+      file: BoredApeYachtClub/BoredApeYachtClub.wasm
