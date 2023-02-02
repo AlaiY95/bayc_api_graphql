@@ -1,0 +1,18 @@
+{
+  "name": "bayc_api_graphql",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.studio.thegraph.com/deploy/ bayc_api_graphql",
+    "create-local": "graph create --node http://localhost:8020/ bayc_api_graphql",
+    "remove-local": "graph remove --node http://localhost:8020/ bayc_api_graphql",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 bayc_api_graphql",
+    "test": "graph test"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.38.0",
+    "@graphprotocol/graph-ts": "0.29.1"
+  },
+  "devDependencies": { "matchstick-as": "0.5.0" }
+}
